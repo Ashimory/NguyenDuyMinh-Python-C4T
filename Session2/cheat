@@ -1,0 +1,6 @@
+from turtle import *
+shape("turtle")
+color("cyan")
+speed(-1)
+for i in range(5):
+    if i in re
