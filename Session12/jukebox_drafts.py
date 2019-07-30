@@ -40,12 +40,3 @@ with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 # }
 # with open("info.txt", "w") as a:
 #     a.writelines(information)
-with open("playlist.json","a+", encoding="utf8") as f:
-    v = [a,c]
-    for i in v:
-        try:
-            pl = json.load(f)
-            pl.append(i)
-
-        except json.JSONDecodeError:
-            json.dump(i,f)
